@@ -4,21 +4,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Assignment Five</title>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-  <header>
+  <header class="header-container shadow border-blue-500 px-4 py-2">
 
+    <div class="flex justify-between bg-white-50">
+      <!-- left  -->
+      <div class="flex gap-2">
+        <img src="/assets/logo.png" class="w-12 h-12" alt="">
+        <h3 class="font-[900] text-[#006747]">Emergency <br>Service</h3>
+      </div>
+      <!-- right  -->
+      <div class="flex gap-4 px-4 py-4">
+        <!--love  -->
+        <div class="flex items-center rounded-[15px] gap-2 px-3 py-1 bg-slate-300">
+          <span class="font-bold">0</span>
+          <img src="./assets/heart.png" class="w-7 h-7" alt="">
+
+        </div>
+        <!-- coin  -->
+        <div class="flex items-center rounded-[15px] gap-2 px-3 py-1 bg-slate-300">
+          <span class="font-bold">100</span>
+          <img src="./assets/coin.png" class="w-7 h-7" alt="">
+
+        </div>
+        <!-- btn  -->
+        <div class="flex items-center rounded-full gap-4 px-3 py-1 bg-green-600">
+          <button class="text-white">
+            <span>0</span>
+            <span>Cope</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </header>
   <main>
 
   </main>
-  <footer>
 
-  </footer>
 </body>
 
 </html>
