@@ -32,37 +32,37 @@ function addToHistory(service, number) {
 
   historyAside.appendChild(div);
 }
-// cardContainer.addEventListener("click", function (e) {
-//   const heartBtn = e.target.closest("img#heart-card");
-//   const callBtn = e.target.closest("button#call-btn");
-//   const copeBtn = e.target.closest("button#real-cope-btn");
+cardContainer.addEventListener("click", function (e) {
+  const heartBtn = e.target.closest("img#heart-card");
+  const callBtn = e.target.closest("button#call-btn");
+  const copeBtn = e.target.closest("button#real-cope-btn");
 
-//   // heart btn
-//   if (heartBtn) {
-//     heartEl.textContent = getInt(heartEl) + 1;
-//     return;
-//   }
-//   // call btn
-//   if (callBtn) {
-//     let coins = getInt(coinEl);
-//     const { title, number } = getCardInfo(callBtn);
+  // heart btn
+  if (heartBtn) {
+    heartEl.textContent = getInt(heartEl) + 1;
+    return;
+  }
+  // call btn
+  if (callBtn) {
+    let coins = getInt(coinEl);
+    const { title, number } = getCardInfo(callBtn);
   
-//     if (coins < 20) {
-//       alert("Call is not being made because you have less than 20 coins");
-//       return;
-//     }
-//     coinEl.textContent = coins - 20;
-//     alert(`📞Calling ${title} -${number}`);
-//     addToHistory(title, number);
-//     return;
-//   }
+    if (coins < 20) {
+      alert("Call is not being made because you have less than 20 coins");
+      return;
+    }
+    coinEl.textContent = coins - 20;
+    alert(`📞Calling ${title} -${number}`);
+    addToHistory(title, number);
+    return;
+  }
 
-//   //text cope
-//   if (copeBtn) {
-//     const { number } = getCardInfo(copeBtn);
-//     copeEl.textContent = getInt(copeEl) + 1;
-//     alert(`Cope taken for hotline: ${number}`);
-//     return
-//   }
-
-// })
+  //text cope
+  if (copeBtn) {
+    const { number } = getCardInfo(copeBtn);
+    copeEl.textContent = getInt(copeEl) + 1;
+    alert(`Cope taken for hotline: ${number}`);
+    return
+  }
+  
+})
