@@ -21,22 +21,22 @@
       <!-- right  -->
       <div class="flex gap-4 px-4 py-4">
         <!--love  -->
-        <div class="md:flex items-center rounded-[15px] gap-2 px-3 py-1 bg-slate-300">
-          <span class="font-bold">0</span>
+        <div class="flex items-center rounded-[15px] gap-2 px-3 py-1 bg-slate-300">
+          <span id="heart-number" class="font-bold">0</span>
           <img src="assets/heart.png" class="w-7 h-7" alt="">
 
         </div>
         <!-- coin  -->
         <div class="flex items-center rounded-[15px] gap-2 px-3 py-1 bg-slate-300">
-          <span class="font-bold">100</span>
+          <span id="coin-point" class="font-bold">200</span>
           <img src="assets/coin.png" class="w-7 h-7" alt="">
 
         </div>
         <!-- btn  -->
         <div class="flex items-center rounded-full gap-4 px-3 py-1 bg-green-600">
-          <button class="text-white">
-            <span>0</span>
-            <span>Cope</span>
+          <button id="cope-btn" class="text-white">
+            <span id="cope-number">0</span>
+            <span id="cope-btn-1">Cope</span>
           </button>
         </div>
       </div>
@@ -52,18 +52,18 @@
           Bangladesh</p>
       </div>
     </section>
-    <section class="card-container w-11/12 mx-auto sm:md:lg:grid grid-cols-5 gap-4 py-6">
+    <section class="card-container w-11/12 mx-auto lg:grid  sm:grid md:gtid grid-cols-5 gap-4 py-6">
       <!-- card start -->
       <section id="card-container" class="col-span-4 gap-6">
         <!-- card-1 -->
-        <div class="justify-items-center sm:md:lg:grid grid-cols-3 gap-6">
+        <div class="justify-items-center lg:grid sm:grid md:gtid grid-cols-3 gap-6">
           <div class="w-[360px] bg-white rounded-xl shadow p-4 flex flex-col gap-3 mb-4">
             <div class="flex justify-between items-start">
               <div class="w-12 h-12 flex items-center justify-center bg-red-100 rounded-md">
                 <img src="assets/emergency.png" class="w-8 h-8" alt="">
               </div>
               <button>
-                <img src="assets/heart-1.svg" class="w-8 h-8" alt="">
+                <img id="heart-card" src="assets/heart-1.svg" class="w-8 h-8" alt="">
               </button>
             </div>
             <div>
@@ -72,15 +72,15 @@
             </div>
 
             <div>
-              <h1 class="font-bold text-[32px]">999</h1>
+              <h1 id="emergency-hotline" class="font-bold text-[32px]">999</h1>
               <p class="inline-block text-gray-700 text-[18px] bg-gray-200 rounded-md px-3">All</p>
             </div>
             <div class="flex gap-3 mt-auto">
-              <button
+              <button id="real-cope-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center gap-2 text-gray-700 text-[16px]">
                 <img src="assets/cope.svg" class="w-4" alt="">Cope
               </button>
-              <button
+              <button id="call-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center bg-green-600 text-white text-[16px] gap-2">
                 <img src="assets/call.svg" class="w-4" alt="">Call
               </button>
@@ -93,24 +93,24 @@
                 <img src="assets/police.png" class="w-8 h-8" alt="">
               </div>
               <button>
-                <img src="assets/heart-1.svg" class="w-8 h-8" alt="">
+                <img id="heart-card" src="assets/heart-1.svg" class="w-8 h-8" alt="">
               </button>
             </div>
             <div>
-              <h4 class="font-bold text-[24px]">Police Helpline Number</h4>
+              <h4 id="emergency-title" class="font-bold text-[24px]">Police Helpline Number</h4>
               <p class="text-[18px] text-gray-500">Police</p>
             </div>
 
             <div>
-              <h1 class="font-bold text-[32px]">999</h1>
+              <h1 id="emergency-hotline" class="font-bold text-[32px]">999</h1>
               <p class="inline-block text-gray-700 text-[18px] bg-gray-200 rounded-md px-3">Police</p>
             </div>
             <div class="flex gap-3 mt-auto">
-              <button
+              <button id="real-cope-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center gap-2 text-gray-700 text-[16px]">
                 <img src="assets/cope.svg" class="w-4" alt="">Cope
               </button>
-              <button
+              <button id="call-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center bg-green-600 text-white text-[16px] gap-2">
                 <img src="assets/call.svg" class="w-4" alt="">Call
               </button>
@@ -123,24 +123,24 @@
                 <img src="assets/fire-service.png" class="w-8 h-8" alt="">
               </div>
               <button>
-                <img src="assets/heart-1.svg" class="w-8 h-8" alt="">
+                <img id="heart-card" src="assets/heart-1.svg" class="w-8 h-8" alt="">
               </button>
             </div>
             <div>
-              <h4 class="font-bold text-[24px]">Fire Service Number</h4>
+              <h4 id="emergency-title" class="font-bold text-[24px]">Fire Service Number</h4>
               <p class="text-[18px] text-gray-500">Fire Service</p>
             </div>
 
             <div>
-              <h1 class="font-bold text-[32px]">999</h1>
+              <h1 id="emergency-hotline" class="font-bold text-[32px]">999</h1>
               <p class="inline-block text-gray-700 text-[18px] bg-gray-200 rounded-md px-3">Fire</p>
             </div>
             <div class="flex gap-3 mt-auto">
-              <button
+              <button id="real-cope-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center gap-2 text-gray-700 text-[16px]">
                 <img src="assets/cope.svg" class="w-4" alt="">Cope
               </button>
-              <button
+              <button id="call-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center bg-green-600 text-white text-[16px] gap-2">
                 <img src="assets/call.svg" class="w-4" alt="">Call
               </button>
@@ -153,24 +153,24 @@
                 <img src="assets/ambulance.png" class="w-8 h-8" alt="">
               </div>
               <button>
-                <img src="assets/heart-1.svg" class="w-8 h-8" alt="">
+                <img id="heart-card" src="assets/heart-1.svg" class="w-8 h-8" alt="">
               </button>
             </div>
             <div>
-              <h4 class="font-bold text-[24px]">Ambulance Service</h4>
+              <h4 id="emergency-title" class="font-bold text-[24px]">Ambulance Service</h4>
               <p class="text-[18px] text-gray-500">Ambulance</p>
             </div>
 
             <div>
-              <h1 class="font-bold text-[32px]">1994-999999</h1>
+              <h1 id="emergency-hotline" class="font-bold text-[32px]">1994-999999</h1>
               <p class="inline-block text-gray-700 text-[18px] bg-gray-200 rounded-md px-3">Health</p>
             </div>
             <div class="flex gap-3 mt-auto">
-              <button
+              <button id="real-cope-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center gap-2 text-gray-700 text-[16px]">
                 <img src="assets/cope.svg" class="w-4" alt="">Cope
               </button>
-              <button
+              <button id="call-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center bg-green-600 text-white text-[16px] gap-2">
                 <img src="assets/call.svg" class="w-4" alt="">Call
               </button>
@@ -183,24 +183,24 @@
                 <img src="assets/emergency.png" class="w-8 h-8" alt="">
               </div>
               <button>
-                <img src="assets/heart-1.svg" class="w-8 h-8" alt="">
+                <img id="heart-card" src="assets/heart-1.svg" class="w-8 h-8" alt="">
               </button>
             </div>
             <div>
-              <h4 class="font-bold text-[24px]">Women & Child Helpline</h4>
+              <h4 id="emergency-title" class="font-bold text-[24px]">Women & Child Helpline</h4>
               <p class="text-[18px] text-gray-500">Women & Child Helpline</p>
             </div>
 
             <div>
-              <h1 class="font-bold text-[32px]">109</h1>
+              <h1 id="emergency-hotline" class="font-bold text-[32px]">109</h1>
               <p class="inline-block text-gray-700 text-[18px] bg-gray-200 rounded-md px-3">Help</p>
             </div>
             <div class="flex gap-3 mt-auto">
-              <button
+              <button id="real-cope-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center gap-2 text-gray-700 text-[16px]">
                 <img src="assets/cope.svg" class="w-4" alt="">Cope
               </button>
-              <button
+              <button id="call-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center bg-green-600 text-white text-[16px] gap-2">
                 <img src="assets/call.svg" class="w-4" alt="">Call
               </button>
@@ -213,24 +213,24 @@
                 <img src="assets/emergency.png" class="w-8 h-8" alt="">
               </div>
               <button>
-                <img src="assets/heart-1.svg" class="w-8 h-8" alt="">
+                <img id="heart-card" src="assets/heart-1.svg" class="w-8 h-8" alt="">
               </button>
             </div>
             <div>
-              <h4 class="font-bold text-[24px]">Anti-Corruption Helpline</h4>
+              <h4 id="emergency-title" class="font-bold text-[24px]">Anti-Corruption Helpline</h4>
               <p class="text-[18px] text-gray-500">Anti-Corruption</p>
             </div>
 
             <div>
-              <h1 class="font-bold text-[32px]">106</h1>
+              <h1 id="emergency-hotline" class="font-bold text-[32px]">106</h1>
               <p class="inline-block text-gray-700 text-[18px] bg-gray-200 rounded-md px-3">Govt.</p>
             </div>
             <div class="flex gap-3 mt-auto">
-              <button
+              <button id="real-cope-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center gap-2 text-gray-700 text-[16px]">
                 <img src="assets/cope.svg" class="w-4" alt="">Cope
               </button>
-              <button
+              <button id="call-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center bg-green-600 text-white text-[16px] gap-2">
                 <img src="assets/call.svg" class="w-4" alt="">Call
               </button>
@@ -243,24 +243,24 @@
                 <img src="assets/emergency.png" class="w-8 h-8" alt="">
               </div>
               <button>
-                <img src="assets/heart-1.svg" class="w-8 h-8" alt="">
+                <img id="heart-card" src="assets/heart-1.svg" class="w-8 h-8" alt="">
               </button>
             </div>
             <div>
-              <h4 class="font-bold text-[24px]">Electricity Helpline</h4>
+              <h4 id="emergency-title" class="font-bold text-[24px]">Electricity Helpline</h4>
               <p class="text-[18px] text-gray-500">Electricity Outage</p>
             </div>
 
             <div>
-              <h1 class="font-bold text-[32px]">16216</h1>
+              <h1 id="emergency-hotline" class="font-bold text-[32px]">16216</h1>
               <p class="inline-block text-gray-700 text-[18px] bg-gray-200 rounded-md px-3">Electricity</p>
             </div>
             <div class="flex gap-3 mt-auto">
-              <button
+              <button id="real-cope-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center gap-2 text-gray-700 text-[16px]">
                 <img src="assets/cope.svg" class="w-4" alt="">Cope
               </button>
-              <button
+              <button id="call-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center bg-green-600 text-white text-[16px] gap-2">
                 <img src="assets/call.svg" class="w-4" alt="">Call
               </button>
@@ -273,24 +273,24 @@
                 <img src="assets/brac.png" class="w-8 h-8" alt="">
               </div>
               <button>
-                <img src="assets/heart-1.svg" class="w-8 h-8" alt="">
+                <img id="heart-card" src="assets/heart-1.svg" class="w-8 h-8" alt="">
               </button>
             </div>
             <div>
-              <h4 class="font-bold text-[24px]">Brac Helpline</h4>
+              <h4 id="emergency-title" class="font-bold text-[24px]">Brac Helpline</h4>
               <p class="text-[18px] text-gray-500">Brac</p>
             </div>
 
             <div>
-              <h1 class="font-bold text-[32px]">16445</h1>
+              <h1 id="emergency-hotline" class="font-bold text-[32px]">16445</h1>
               <p class="inline-block text-gray-700 text-[18px] bg-gray-200 rounded-md px-3">NGO</p>
             </div>
             <div class="flex gap-3 mt-auto">
-              <button
+              <button id="real-cope-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center gap-2 text-gray-700 text-[16px]">
                 <img src="assets/cope.svg" class="w-4" alt="">Cope
               </button>
-              <button
+              <button id="call-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center bg-green-600 text-white text-[16px] gap-2">
                 <img src="assets/call.svg" class="w-4" alt="">Call
               </button>
@@ -303,24 +303,24 @@
                 <img src="assets/Bangladesh-Railway.png" class="w-8 h-8" alt="">
               </div>
               <button>
-                <img src="assets/heart-1.svg" class="w-8 h-8" alt="">
+                <img id="heart-card" src="assets/heart-1.svg" class="w-8 h-8" alt="">
               </button>
             </div>
             <div>
-              <h4 class="font-bold text-[24px]">Bangladesh Railway Helpline</h4>
+              <h4 id="emergency-title" class="font-bold text-[24px]">Bangladesh Railway Helpline</h4>
               <p class="text-[18px] text-gray-500">Bangladesh Railway</p>
             </div>
 
             <div>
-              <h1 class="font-bold text-[32px]">163</h1>
+              <h1 id="emergency-hotline" class="font-bold text-[32px]">163</h1>
               <p class="inline-block text-gray-700 text-[18px] bg-gray-200 rounded-md px-3">Travel</p>
             </div>
             <div class="flex gap-3 mt-auto">
-              <button
+              <button id="real-cope-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center gap-2 text-gray-700 text-[16px]">
                 <img src="assets/cope.svg" class="w-4" alt="">Cope
               </button>
-              <button
+              <button id="call-btn"
                 class="flex-1 border rounded-md py-2 flex items-center justify-center bg-green-600 text-white text-[16px] gap-2">
                 <img src="assets/call.svg" class="w-4" alt="">Call
               </button>
@@ -331,7 +331,7 @@
       <aside id="aside-container" class="col-span-1 bg-white rounded-xl shadow p-4 mb-4">
         <div class="flex justify-between items-center mb-4">
           <h2 class="font-bold text-lg">⌚ Call history</h2>
-          <button class="bg-green-600 text-white text-sm px-3 py-1 rounded-md">Clear</button>
+          <button id="Clear-btn" class="bg-green-600 text-white text-sm px-3 py-1 rounded-md">Clear</button>
         </div>
 
       </aside>
