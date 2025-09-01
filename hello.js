@@ -31,14 +31,14 @@ for (const callBtn of callClicks) {
 
     const totalPoint = document.getElementById("coin-point").innerText;
 
-if (  totalPoint < 20) {
+    if (  totalPoint < 20) {
       alert(`❌ call is not being made because you have less than 20 coins`)
       return;
     }
-   
+
     const currentTotal = Number(totalPoint) - 20;
-   
-    document.getElementById("coin-point").innerText = currentTotal;
+   document.getElementById("coin-point").innerText = currentTotal;
+    
   
     
     alert(`📞Calling  ${clickCall} : ${clickNum}`);
@@ -51,13 +51,16 @@ if (  totalPoint < 20) {
                 <h3 class="font-[700] text-[15px]">${clickCall}</h3>
                 <h3 class="font-[700] text-[15px]">${clickNum}</h3>
                </div>
-              <div class="font-[700]">Time</div>
+              <div class="font-[700]">time</div>
         </div>`;
     asideContainer.append(newCard);
-  });
-}
 
-document.getElementById("clear-btn").addEventListener("click", function () {
-  const cartContainer = getElement("cart-container").innerText;
-  cartContainer.innerHTML= "";
-})
+  });
+
+}
+// clear-btn 
+
+   document.getElementById("clear-btn").addEventListener("click", function (id) {
+     const cartContainer = document.getElementById("cart-container").innerHTML = "";
+
+  })
