@@ -1,3 +1,6 @@
+console.log(document);
+// heart-btn
+
 let count = 0;
 const clickHearts = document.getElementsByClassName("heart-btn");
 console.log(clickHearts);
@@ -10,6 +13,8 @@ for (let clickHeart of clickHearts) {
   });
 }
 
+//cope-btn
+
 const clickCopes = document.querySelectorAll(".copy-btn");
 for (const copyBtn of clickCopes) {
   copyBtn.addEventListener("click", function () {
@@ -21,6 +26,8 @@ for (const copyBtn of clickCopes) {
   });
 }
 
+// call-btn
+
 const callClicks = document.querySelectorAll(".call-btn");
 for (const callBtn of callClicks) {
   callBtn.addEventListener("click", function () {
@@ -31,7 +38,7 @@ for (const callBtn of callClicks) {
 
     const totalPoint = document.getElementById("coin-point").innerText;
 
-    if (  totalPoint < 20) {
+    if (  Number(totalPoint) < 20) {
       alert(`❌ call is not being made because you have less than 20 coins`)
       return;
     }
@@ -51,7 +58,7 @@ for (const callBtn of callClicks) {
                 <h3 class="font-[700] text-[15px]">${clickCall}</h3>
                 <h3 class="font-[700] text-[15px]">${clickNum}</h3>
                </div>
-              <div class="font-[700]">time</div>
+              <div class="font-[700]">${new Date().toLocaleTimeString([],{hour:"2-digit", minute:"2-digit",hour12:true})}</div>
         </div>`;
     asideContainer.append(newCard);
 
