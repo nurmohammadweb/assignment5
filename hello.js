@@ -24,6 +24,40 @@ for (const copyBtn of clickCopes) {
 const callClicks = document.querySelectorAll(".call-btn");
 for (const callBtn of callClicks) {
   callBtn.addEventListener("click", function () {
-    alert(`📞Calling `);
+  
+    const clickCall = callBtn.parentNode.parentNode.children[1].children[0].innerText;
+    const clickNum = callBtn.parentNode.parentNode.children[2].children[0].innerText;
+    const coinPoint = callBtn.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].children[1].children[1].children[0].innerText;
+
+    const totalPoint = document.getElementById("coin-point").innerText;
+
+if (  totalPoint < 20) {
+      alert(`❌ call is not being made because you have less than 20 coins`)
+      return;
+    }
+   
+    const currentTotal = Number(totalPoint) - 20;
+   
+    document.getElementById("coin-point").innerText = currentTotal;
+  
+    
+    alert(`📞Calling  ${clickCall} : ${clickNum}`);
+   
+    const asideContainer =document.getElementById("cart-container");
+    const newCard = document.createElement("div");
+    newCard.innerHTML= ` 
+        <div class="flex justify-between items-center">
+              <div>
+                <h3 class="font-[700] text-[15px]">${clickCall}</h3>
+                <h3 class="font-[700] text-[15px]">${clickNum}</h3>
+               </div>
+              <div class="font-[700]">Time</div>
+        </div>`;
+    asideContainer.append(newCard);
   });
 }
+
+document.getElementById("clear-btn").addEventListener("click", function () {
+  const cartContainer = getElement("cart-container").innerText;
+  cartContainer.innerHTML= "";
+})

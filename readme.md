@@ -3,7 +3,7 @@
 Answer-getElementById - একটা নির্দিষ্ট id–এর এলিমেন্ট আনে।
 getElementsByClassName - একই ক্লাসের সব এলিমেন্ট লিস্ট আনে।
 querySelector - প্রথম ম্যাচ হওয়া এলিমেন্ট আনে।
-querySelectorAll  সব ম্যাচ হওয়া এলিমেন্ট লিস্ট আনে।
+querySelectorAll - সব ম্যাচ হওয়া এলিমেন্ট লিস্ট আনে।
 2. How do you **create and insert a new element into the DOM**?
 Answer-নতুন এলিমেন্ট বানাতে document.createElement() ব্যবহার করি, কনটেন্ট বসিয়ে appendChild() বা append() দিয়ে DOM এ যোগ করি।
 3. What is **Event Bubbling** and how does it work?
